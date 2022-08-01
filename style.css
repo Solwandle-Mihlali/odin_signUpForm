@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.container{
+
+ 
+    width: 100%;
+    height:100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+img{
+
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    animation: rotate 3s 1;
+}
+
+@keyframes rotate {
+
+    from{
+
+        transform: rotateY(360deg);
+    }
+    
+}
+form{
+
+    height:90%;
+    width: 40%;
+    border: solid 1px white;
+    background: rgba(128, 128, 128, 0.39);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: down 1s 1;
+}
+
+form section {
+
+    width: 90%;
+    height: 20%;
+    padding:20px;
+}
+
+form #textSection{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+form #textSection p {
+
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}
+
+form #labels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+    height: 60%;
+    flex-wrap: wrap;
+}
+
+
+form #labels input{
+
+    width: 80%;
+    height: 10%;
+    background: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+form #labels input::placeholder{
+
+    color: white;
+    text-transform: capitalize;
+}
+
+button[type="submit"]{
+
+    background: green;
+    width: 30%;
+    height: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: solid 0.5px white;
+    box-shadow: 1px 2px 10px black ;
+    position: relative;
+    
+}
